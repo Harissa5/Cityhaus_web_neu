@@ -114,8 +114,8 @@ body {
 
 .nav-toggle {
   position: fixed;
-  top: 18px;
-  left: 18px;
+  top: 32px;
+  left: 32px;
   display: block;
   width: 42px;
   height: 30px;
@@ -189,8 +189,8 @@ body {
   display: block;
   transform: scaleY(0.8);
   transform-origin: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
 .hero-copy {
