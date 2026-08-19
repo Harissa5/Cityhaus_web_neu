@@ -118,8 +118,8 @@ body {
   top: 32px;
   left: 32px;
   display: block;
-  width: 42px;
-  height: 30px;
+  width: 38px;
+  height: 26px;
   background: transparent;
   border: none;
   z-index: 1001;
@@ -131,14 +131,14 @@ body {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 1.5px;
   background: var(--text);
   transition: 0.2s ease;
 }
 
 .nav-toggle span:nth-child(1) { top: 0; }
-.nav-toggle span:nth-child(2) { top: 13px; }
-.nav-toggle span:nth-child(3) { top: 26px; }
+.nav-toggle span:nth-child(2) { top: 11px; }
+.nav-toggle span:nth-child(3) { top: 22px; }
 
 .nav-toggle.is-active span:nth-child(1) {
   top: 13px;
