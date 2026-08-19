@@ -1,8 +1,8 @@
 :root {
   --bg: #ffffff;
   --panel: #ffffff;
-  --text: #1b1b1b;
-  --muted: #5f5f58;
+  --text: #000000;
+  --muted: #000000;
   --line: rgba(0, 0, 0, 0.12);
   --accent: #7a1c1a;
   --shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
@@ -210,13 +210,13 @@ body {
   font-size: clamp(2.2rem, 3vw, 3.1rem);
   font-weight: 400;
   letter-spacing: -0.04em;
-  color: var(--muted);
+  color: #000000;
 }
 
 .hero-copy .artist-name,
 .hero-copy .series-name,
 .hero-copy .event-date {
-  color: var(--muted);
+  color: #000000;
 }
 
 .hero-copy .artist-name,
