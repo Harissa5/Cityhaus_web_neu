@@ -235,6 +235,29 @@ body {
   color: var(--text);
 }
 
+.initial-prompt {
+  margin-top: 52px;
+  padding: 28px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.prompt-label {
+  margin: 0 0 12px;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.prompt-text {
+  margin: 0;
+  font-size: clamp(1.2rem, 2vw, 2.2rem);
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  max-width: 1100px;
+}
+
 .page-intro {
   margin-bottom: 28px;
 }
@@ -350,37 +373,42 @@ body {
 .press-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  max-width: 760px;
+  max-width: 1100px;
+  width: 100%;
 }
 
 .press-item {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  padding: 18px 22px;
-  background: rgba(255,255,255,0.4);
-  border: 1px solid var(--line);
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  display: block;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
 }
 
-.press-item:hover {
-  transform: translateY(-1px);
-  border-color: rgba(0,0,0,0.25);
+.press-item:last-child {
+  border-bottom: 1px solid var(--line);
 }
 
-.press-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 28px;
-  border-radius: 4px;
-  background: var(--accent);
-  color: white;
+.press-item:hover .press-title {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.press-title {
+  display: block;
+  font-size: clamp(1.05rem, 1.8vw, 1.7rem);
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.press-source {
+  display: block;
+  margin-top: 6px;
   font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 .about-page,
