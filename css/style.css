@@ -199,8 +199,7 @@ body {
 .hero-copy h1,
 .page-intro h1,
 .contact-card h1,
-.about-text h1,
-.press-intro h1 {
+.about-text h1 {
   margin: 0;
   font-size: clamp(2.2rem, 3vw, 3.1rem);
   font-weight: 600;
@@ -375,18 +374,19 @@ body {
   flex-direction: column;
   max-width: 1100px;
   width: 100%;
+  gap: 14px;
 }
 
 .press-item {
   display: block;
-  padding: 18px 0;
-  border-top: 1px solid var(--line);
+  padding: 0;
+  border: none;
   color: var(--text);
   text-decoration: none;
 }
 
 .press-item:last-child {
-  border-bottom: 1px solid var(--line);
+  border-bottom: none;
 }
 
 .press-item:hover .press-title {
