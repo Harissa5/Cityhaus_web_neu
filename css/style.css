@@ -174,12 +174,12 @@ body {
 }
 
 .hero-image-panel {
-  background: var(--panel);
+  background: transparent;
   padding: 0;
-  box-shadow: var(--shadow);
+  box-shadow: none;
   max-width: 640px;
   justify-self: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-image-panel img {
