@@ -2,7 +2,7 @@
   --bg: #ffffff;
   --panel: #ffffff;
   --text: #1b1b1b;
-  --muted: #5a5a5a;
+  --muted: #5f5f58;
   --line: rgba(0, 0, 0, 0.12);
   --accent: #7a1c1a;
   --shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
@@ -209,6 +209,13 @@ body {
   font-size: clamp(2.2rem, 3vw, 3.1rem);
   font-weight: 600;
   letter-spacing: -0.04em;
+  color: var(--muted);
+}
+
+.hero-copy .artist-name,
+.hero-copy .series-name,
+.hero-copy .event-date {
+  color: var(--muted);
 }
 
 .hero-copy .artist-name,
