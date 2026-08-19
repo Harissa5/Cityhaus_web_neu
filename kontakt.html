@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Kontakt zum Cityhaus Weinfelden." />
     <title>Kontakt — Cityhaus</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -26,14 +27,14 @@
         </ul>
       </nav>
 
-      <div class="brand" aria-label="Cityhaus logo">
+      <a href="/" class="brand" aria-label="Cityhaus logo">
         <img src="assets/Logo_Cityhaus.png" alt="Cityhaus Logo" />
         <div class="brand-location">Weinfelden</div>
-      </div>
+      </a>
     </header>
 
     <main class="page-shell contact-page">
-      <section class="contact-card">
+      <section class="contact-info">
         <h1>Cityhaus Weinfelden</h1>
         <p>Pop-up Galerie Conrad</p>
         <p>Pestalozzistrasse 12</p>
@@ -47,8 +48,12 @@
           <p>und nach Vereinbarung</p>
         </div>
       </section>
+
+      <div id="kontakt-map" class="map-frame" role="img" aria-label="Standort Cityhaus Weinfelden"></div>
     </main>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="js/script.js"></script>
+    <script src="js/kontakt-map.js"></script>
   </body>
 </html>
