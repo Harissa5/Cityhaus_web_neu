@@ -179,6 +179,7 @@ body {
   box-shadow: var(--shadow);
   max-width: 640px;
   justify-self: center;
+  overflow: hidden;
 }
 
 .hero-image-panel img {
@@ -186,6 +187,10 @@ body {
   height: auto;
   object-fit: cover;
   display: block;
+  transform: scaleY(0.8);
+  transform-origin: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .hero-copy {
