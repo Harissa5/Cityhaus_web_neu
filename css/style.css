@@ -46,13 +46,13 @@ body {
 }
 
 .brand {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 4px;
   text-align: center;
-  width: 100%;
+  width: fit-content;
   margin: 0;
   padding-top: 8px;
 }
@@ -246,6 +246,7 @@ body {
 .about-text p {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.6);
+  line-height: 1.35;
 }
 
 .initial-prompt {
@@ -503,8 +504,9 @@ body {
 }
 
 .about-visual {
-  width: min(580px, 70%);
+  width: min(580px, 100%);
   margin-bottom: 26px;
+  align-self: center;
 }
 
 .about-visual img {
@@ -513,8 +515,10 @@ body {
 }
 
 .about-text {
-  max-width: min(580px, 70%);
-  text-align: center;
+  width: min(580px, 100%);
+  max-width: 100%;
+  text-align: left;
+  margin: 0 auto;
 }
 
 .about-text h2 {
@@ -663,9 +667,51 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .exhibit-row > .exhibit-image,
+  .exhibit-row > a,
+  .exhibit-row > .exhibit-copy {
+    order: initial;
+  }
+
+  .exhibit-row > .exhibit-image,
+  .exhibit-row > a {
+    order: 1;
+  }
+
+  .exhibit-row > .exhibit-copy {
+    order: 2;
+  }
+
+  .artist-card,
+  .artist-card-reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .artist-card > img,
+  .artist-card-reverse > img {
+    order: 1;
+  }
+
+  .artist-card > div,
+  .artist-card-reverse > div {
+    order: 2;
+  }
+
+  .about-page {
+    display: flex;
+  }
+
   .exhibit-row.reverse .exhibit-image,
   .exhibit-row.reverse .exhibit-copy {
     order: initial;
+  }
+
+  .about-text {
+    max-width: min(580px, 100%);
+  }
+
+  .about-visual {
+    width: min(580px, 100%);
   }
 
   .page-shell {
