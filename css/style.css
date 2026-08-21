@@ -242,11 +242,26 @@ body {
 .exhibit-title,
 .exhibit-dates,
 .featured-copy p,
-.contact-card p,
-.about-text p {
+.contact-card p {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.6);
   line-height: 1.35;
+}
+
+.about-text {
+  width: min(580px, 100%);
+  max-width: 100%;
+  text-align: left;
+  margin: 0 auto;
+  color: #000;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .initial-prompt {
@@ -512,13 +527,6 @@ body {
 .about-visual img {
   width: 100%;
   height: auto;
-}
-
-.about-text {
-  width: min(580px, 100%);
-  max-width: 100%;
-  text-align: left;
-  margin: 0 auto;
 }
 
 .about-text h2 {
